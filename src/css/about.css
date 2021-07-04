@@ -1,0 +1,34 @@
+body{
+    background-color: rgba(29, 31, 31, 0.052);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+img{
+    float: right;
+    width: 490px;
+    height: 500px;
+    margin-top: 134px;
+    margin-right: 231px;
+    box-shadow: 15px 15px 40px 0px rgb(150, 149, 149);
+}
+.left{
+    margin-left: 231px;
+    margin-right: 900px;
+}
+h1{
+    color: rgb(91, 175, 6);
+    font-size: 60px;
+}
+p{
+    color: rgb(99, 98, 98);
+    font-size: 20px;
+}
+.btn{
+    background-color: rgb(91, 175, 6);
+    width: 125px;
+	height: 40px;
+	border-radius: 5px;
+	border: 0px;
+	color: white;
+	text-align: center;
+}
