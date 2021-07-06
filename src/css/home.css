@@ -1,0 +1,124 @@
+/* Button Css */
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #4aab00;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+}
+.btn-16 {
+  background: #4aab00;
+  color: #ecffed;
+  z-index: 1;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #09080c;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #4aab00;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+/* User Image */
+.user-icon {
+  margin-left: 10px;
+}
+/* Dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-left: 220px;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  align-items: center;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #4aab00;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #09080c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #4aab00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* nav-toggler css start */
+
+.home {
+  background: #09080c url(/src/images/Menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* intro-area css start */
+.intro-area {
+  height: calc(100vh - 61px);
+  padding-top: 15%;
+  padding-left: 10%;
+  color: white;
+}
+.intro-area h2 {
+  font-size: 72px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ecffed;
+  font-weight: 300;
+  line-height: 50px;
+}
+.intro-area p {
+  font-size: 18px;
+  margin-top: 25px;
+}
+/* intro-area css end */

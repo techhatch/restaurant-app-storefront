@@ -4,21 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
+
 .navbar-area .container {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .header-area {
-  background: #0e0d13 url();
-  background-position: center center;
+  background-color: #09080c;
+  width: 2522;
+  height: 1093;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 /* default css end */
@@ -30,17 +27,17 @@ body {
 }
 .site-navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 a.site-logo {
   font-size: 40px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #f5f5f6;
+  margin-left: 10%;
   text-decoration: none;
 }
 .site-navbar ul {
-  margin: 0;
+  margin-left: 20%;
   padding: 0;
   list-style: none;
   display: flex;
@@ -50,10 +47,9 @@ a.site-logo {
   padding: 20px;
   display: block;
   text-decoration: none;
-  text-transform: uppercase;
 }
 .site-navbar ul li a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #4aab00;
 }
 /* navbar regular css end */
 
@@ -92,26 +88,6 @@ a.site-logo {
 .nav-toggler.toggler-open span:after {
   transform: translateY(-3px) rotate(-45deg);
 }
-/* nav-toggler css start */
-
-/* intro-area css start */
-.intro-area {
-  height: calc(100vh - 61px);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-.intro-area h2 {
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 50px;
-  margin-bottom: 25px;
-}
-.intro-area p {
-  font-size: 18px;
-}
-/* intro-area css end */
 
 /* mobile breakpoint start */
 @media screen and (max-width: 767px) {
@@ -150,7 +126,7 @@ a.site-logo {
     background-color: rgba(255, 255, 255, 0.1);
   }
   .site-navbar ul.open {
-    max-height: 100vh;
+    max-height: 100%;
     overflow: visible;
   }
   .intro-area h2 {
@@ -160,6 +136,9 @@ a.site-logo {
   /* navbar css for mobile end */
 }
 section#container {
+  margin-top: 0px;
+  margin-left: 0px;
   background-color: white;
+  height: 100%;
 }
 /* mobile breakpoint end */

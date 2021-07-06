@@ -13,7 +13,12 @@
         // toggler icon click event
         navToggler.addEventListener('click', togglerClick);
         // nav links click event
-        navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+        navLinks.forEach(elem => {
+            elem.addEventListener('click', navLinkClick);
+            if (elem.dataset.default) {
+                loadContainer("home.html");
+            }
+        });
     }
 
     // togglerClick function
