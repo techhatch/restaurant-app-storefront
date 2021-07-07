@@ -1,0 +1,121 @@
+.table-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Table image */
+.table-img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  opacity: 0.6;
+  background: #000000;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px black;
+}
+/* Head Text center */
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered h1 {
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  font-variant-numeric: normal;
+  text-shadow: 2px 2px black;
+}
+.sub-head {
+  font-family: fantasy;
+  font-size: 30px;
+  color: white;
+}
+
+.reserve-content p {
+  color: rgb(92, 92, 92);
+  margin-top: 3%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+  vertical-align: top;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: 25%;
+  height: 40px;
+  color: #555353;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 10px 13px 10px 13px;
+  border: 2px solid #909090;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-left: 2%;
+}
+.details {
+  margin-top: 1.5%;
+}
+.d-details {
+  margin-top: 4%;
+}
+.content-box {
+  vertical-align: top;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: 79.5%;
+  height: 200px;
+  color: #555353;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 10px 13px 10px 13px;
+  border: 2px solid #909090;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-left: 2%;
+}
+/* Button */
+
+.submit-btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 15px 200px 30px 200px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #4aab00;
+  height: 50px;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: background 300ms, color 300ms, border 300ms;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
