@@ -1,0 +1,50 @@
+<div class="table-container">
+    <img src="/src/images/table.jpg" alt="table" class="table-img" />
+    <div class="centered">
+        <h1>
+            <span class="sub-head">Take Your Place</span> <br />
+            Table Reservation
+        </h1>
+    </div>
+    <div class="reserve-content">
+
+        <p>
+            If you plan your leisure in advance and do not want to get into a
+            situation <br />
+            when the planned dinner is canceled due to the lack of free seats, reserve
+            <br />
+            a table in advance. You can reserve a table by filling out the form below.
+        </p>
+    </div>
+    <form action="" method="GET">
+        <div class="reservation-form">
+            <div class="row">
+                <div class="col-4">
+                    <input type="text" placeholder="Select Date" onfocus="(this.type='date')"
+                        onblur="if(this.value==''){this.type='text'}" class="d-details" required />
+                    <input type="text" placeholder="Select Time" onfocus="(this.type='time')"
+                        onblur="if(this.value==''){this.type='text'}" class="d-details" required />
+                    <input type="text" placeholder="Select People" name="quantity" min="1" max="16"
+                        onfocus="(this.type='number')" onblur="if(this.value==''){this.type='text'}" class="d-details"
+                        required />
+                </div>
+
+                <div class="col-4">
+                    <input type="text" autocomplete="additional-name" placeholder="Enter your Name" name="your_name"
+                        class="details" required />
+
+                    <input type="email" autocomplete="email" placeholder="Enter your Email" name="your_email"
+                        class="details" required />
+
+                    <input type="tel" autocomplete="tel-local" placeholder="Enter your Phone" name="your_phone"
+                        class="details" required />
+                </div>
+                <textarea placeholder="Enter your Message" name="your_text" class="details content-box"
+                    required></textarea>
+            </div>
+            <input type="submit" value="Submit your reservation" class="submit-btn" />
+    </form>
+
+
+</div>
+</div>
