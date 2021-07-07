@@ -2,14 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" href="/src/css/about.css" />
+    <link rel="stylesheet" href="/src/css/home.css" />
+    <link rel="stylesheet" href="/src/css/signIn.css" />
+    <link rel="stylesheet" href="/src/css/Reservation.css" />
+
+    <title>Tasty Bites</title>
 </head>
 
 <body>
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <header class="header-area">
+        <!-- site-navbar start -->
+        <div class="navbar-area">
+            <div class="container">
+                <nav class="site-navbar">
+                    <!-- site logo -->
+                    <a href="#home" class="site-logo">Tasty Bites</a>
+
+                    <!-- site menu/nav -->
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" data-page-default="true" data-page="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-page="about.html">About</a>
+                        </li>
+                        <li><a href="javascript:void(0)">Menu</a></li>
+                        <li><a href="javascript:void(0)">service</a></li>
+                        <li><a href="javascript:void(0)" data-page="Reservation.html">Reservation</a></li>
+                        <li>
+                            <a href="javascript:void(0)" style="margin-left: 200px" data-page="SignIn.html">Sign
+                                in/Register</a>
+                        </li>
+
+                        <!-- <div class="dropdown">
+                            <button class="dropbtn">User
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+
+                            <div class="dropdown-content">
+                                <a href="javascript:void(0)">Profile</a>
+                                <a href="javascript:void(0)">LogOut</a>
+                            </div>
+                        </div> -->
+
+                        <li>
+                            <a><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
+                        </li>
+                    </ul>
+
+                    <!-- nav-toggler for mobile version only -->
+                    <button class="nav-toggler">
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+        <!-- navbar-area end -->
+    </header>
+    <section id="container">
+        <div class="home">
+            <div class="intro-area">
+                <h2>Making Food Taste Better</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Perferendis laudantium aspernatur odit accusamus<br />
+                    deleniti obcaecati accusantium, debitis eligendi non dolore
+                    veritatis laboriosam impedit veniam optio,<br />
+                    provident quam atque nisi ipsam.
+                </p>
+                <button class="custom-btn btn-16">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <script src="/src/js/signIn.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/reserve.js"></script>
+
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
@@ -20,7 +94,6 @@
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
-
 </body>
 
 </html>
