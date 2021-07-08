@@ -27,3 +27,31 @@
   color: rgb(99, 98, 98);
   font-size: 20px;
 }
+
+.btn-15 {
+  color: #4aab00;
+  z-index: 1;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #4aab00;
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: white;
+}
+.btn-15:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
