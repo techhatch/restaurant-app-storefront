@@ -1,0 +1,48 @@
+.cart .p1{
+    margin-left: 80px;
+    margin-top: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    color: rgb(91, 175, 6);
+}
+.cart .pro{
+    color: rgb(91, 175, 6);
+    font-family: "Sukhumvit Set", sans-serif;
+    font-size: 30px;
+    margin-left: 150px;
+}
+.cart .hr1{
+    border-color: rgb(91, 175, 6);
+    width: 80%;
+    margin-left: 80px;
+}
+.cart img{
+    width: 140px;
+    height: 100px;
+    margin-left: 130px;
+}
+.cart .pr{
+    margin-left: 120px;
+}
+.cart input{
+    margin-left: 200px;
+    width: 55px;
+    height: 30px;
+}
+.cart .st{
+    margin-left: 210px;
+}
+.cart .p2{
+    font-family: "Roboto", sans-serif;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-size: 30px;
+    color: rgb(91, 175, 6);
+}
+.cart .p2 span{
+    font-family: "Roboto", sans-serif;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-size: 30px;
+    color: black;
+}
