@@ -1,54 +1,158 @@
-.cart .p1{
+.cart {
+    display: block;
+}
+
+.cart-row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 80px;
+}
+
+.cart .cart-row .header-col:first-child {
+    min-width: 250px;
+    width: 20%;
+}
+
+.cart .cart-row .header-col {
+    display: flex;
+    padding: 15px 15px;
+    flex-direction: column;
+    text-align: left;
+    width: 20%;
+    /* border: 1px solid gray; */
+}
+
+.cart .cart-row .item-col label {
+    display: none;
+}
+
+.cart .cart-row .item-col {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    float: left;
+    margin: 0px;
+}
+
+.cart .cart-row .item-col.sku {
+    display: block;
+    position: relative;
+}
+
+.cart .cart-row .item-col.sku img {
+    position: relative;
+    width: 140px;
+    height: 100px;
+    float: left;
+    /* margin-left: 130px; */
+}
+
+.cart .cart-row .item-col.sku span {
+    /* position: absolute; */
+    /* left: 140px; */
+    font-size: large;
+    font-weight: 600;
+    vertical-align: middle;
+    /* margin-left: 130px; */
+}
+
+@media screen and (max-width: 767px) {
+    .cart {
+        display: block;
+    }
+    .cart-row {
+        display: block;
+        flex-direction: row;
+        padding-left: 10px;
+    }
+    .cart .cart-row .header-col {
+        display: none;
+    }
+    .cart .cart-row .item-col.sku {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .cart .cart-row .item-col label {
+        display: block;
+    }
+    .cart .cart-row .item-col input[type='number'] {
+        width: 96%;
+    }
+    .cart .cart-row .item-col {
+        display: block;
+        height: 70px;
+        flex-direction: row;
+        width: 50%;
+        float: left;
+    }
+    .cart .cart-row .item-col:last-child {
+        width: 100%;
+    }
+}
+
+.cart .cart-row .header-col.f-right {
+    float: right;
+}
+
+.cart .cart-row .item-col.f-right {
+    float: right;
+}
+
+.cart .p1 {
     margin-left: 80px;
     margin-top: 40px;
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     color: rgb(91, 175, 6);
 }
-.cart .pro{
+
+.cart .pro {
     color: rgb(91, 175, 6);
     font-family: "Sukhumvit Set", sans-serif;
     font-size: 30px;
     margin-left: 150px;
 }
-.cart .hr1{
+
+.cart .hr1 {
     border-color: rgb(91, 175, 6);
     width: 80%;
     margin-left: 80px;
 }
-.cart img{
-    width: 140px;
-    height: 100px;
-    margin-left: 130px;
-}
-.cart .pr{
-    margin-left: 120px;
+
+.cart .pr {
+    /* margin-left: 120px; */
     font-size: 20px;
 }
-.cart input[name="qt"]{
-    margin-left: 190px;
-    width: 60px;
-    height: 40px;
+
+.cart input {
+    /* margin-left: 200px; */
+    width: 55px;
+    height: 30px;
 }
-.cart .st{
-    margin-left: 210px;
+
+.cart .st {
+    /* margin-left: 210px; */
     font-size: 20px;
 }
-.cart .p2{
+
+.cart .p2 {
     font-family: "Roboto", sans-serif;
     margin-left: 80px;
     margin-top: 40px;
     font-size: 30px;
     color: rgb(91, 175, 6);
 }
-.cart .p2 span{
+
+.cart .p2 span {
     font-family: "Roboto", sans-serif;
     margin-left: 120px;
     margin-top: 40px;
     font-size: 20px;
     color: black;
 }
-.cart .butn{
+
+.cart .butn {
     background-color: rgb(91, 175, 6);
     border: none;
     float: right;

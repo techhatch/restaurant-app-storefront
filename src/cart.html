@@ -1,118 +1,100 @@
 <div class="cart">
-<div class="p1">
-<p>CART</p>
-</div>
-<br><br><br>
-<table>
-    <tr>
-        <td>
-            <div class="pro">
-                <p>Product &nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="p1">
+        <h3>CART</h3>
+    </div>
+    <div class="cart">
+        <div class="cart-row">
+            <div class="header-col">
+                <b>Product</b>
             </div>
-        </td>
-        <td>
-            <div class="pro">
-                <p>Price &nbsp;&nbsp;</p>
+            <div class="header-col">
+                <b>Price</b>
             </div>
-        </td>
-        <td>
-            <div class="pro">
-                <p>Quantity &nbsp;&nbsp;</p>
-
+            <div class="header-col">
+                <b>Quantity</b>
             </div>
-        </td>
-        <td>
-            <div class="pro">
-                <p>SubTotal</p>
+            <div class="header-col">
+                <b>SubTotal</b>
             </div>
-        </td>
-    </tr>
-</table>
-
-<br>
-<hr class="hr1">
-<br>
-
-<table>
-    <tr>
-        <td>
-            <div class="img">
-            <img src="/src/images/Menu.png" alt="">
+        </div>
+        <div class="cart-row" data-item-id="">
+            <div class="item-col sku" data-item-col="sku">
+                <img class="img" src="/src/images/Menu.png" alt="">
+                <span>Italiano</span><br>
+                <p>Onion, Mashrooms, Thick dough</p>
             </div>
-        </td>
-
-         <td class="pr"> &nbsp; Italiano</td>
-
-        <td>
-            <div class="pr">
-                <p>200PKR</p>
+            <div class="item-col" data-item-col="rate">
+                <label>Rate: </label>
+                <span>Rs. 200</span>
             </div>
-        </td>
-
-         <td>
-             <div>
-                 &nbsp;&nbsp;<input type="number" name="qt" min="1">
+            <div class="item-col" data-item-col="quantity">
+                <label>Quantity: </label>
+                <input type="number" name="" min="1">
             </div>
-         </td>
-         <td>
-             <div class="st">
-                <p>1000PKR</p>
-             </div>
-         </td>
-    </tr>
-</table>
-
-<br>
-<hr class="hr1">
-<br>
-
-<table>
-    <tr>
-        <td>
-            <div class="img">
-            <img src="/src/images/Menu.png" alt="">
+            <div class="item-col" data-item-col="price">
+                <label>Price: </label>
+                <span>Rs. 200</span>
             </div>
-        </td>
-
-         <td class="pr">&nbsp; Italiano</td>
-
-        <td>
-            <div class="pr">
-                <p>200PKR</p>
+        </div>
+        <div class="cart-row" data-item-id="">
+            <div class="item-col sku" data-item-col="sku">
+                <img class="img" src="/src/images/Menu.png" alt="">
+                <span>Italiano</span><br>
+                <p>Onion, Mashrooms, Thick dough</p>
             </div>
-        </td>
-
-         <td>
-             <div>
-                 &nbsp;&nbsp;<input type="number" name="qt" min="1">
+            <div class="item-col" data-item-col="rate">
+                <label>Rate: </label>
+                <span>Rs. 200</span>
             </div>
-         </td>
-         <td>
-             <div class="st">
-                <p>1000PKR</p>
-             </div>
-         </td>
-    </tr>
-</table>
+            <div class="item-col" data-item-col="quantity">
+                <label>Quantity: </label>
+                <input type="number" name="" min="1">
+            </div>
+            <div class="item-col" data-item-col="price">
+                <label>Price: </label>
+                <span>Rs. 200</span>
+            </div>
+        </div>
+        <template id="cart-item-tmp">
+            <div class="cart-row" data-item-id="">
+                <div class="item-col sku" data-item-col="sku">
+                    <img class="img" src="/src/images/Menu.png" alt="">
+                    <span>Italiano</span><br>
+                    <p>Onion, Mashrooms, Thick dough</p>
+                </div>
+                <div class="item-col" data-item-col="rate">
+                    <label>Rate: </label>
+                    <span>Rs. 200</span>
+                </div>
+                <div class="item-col" data-item-col="quantity">
+                    <label>Quantity: </label>
+                    <input type="number" name="" min="1">
+                </div>
+                <div class="item-col" data-item-col="price">
+                    <label>Price: </label>
+                    <span>Rs. 200</span>
+                </div>
+            </div>
+        </template>
 
-<br>
-<hr class="hr1">
+    </div>
+    <hr class="hr1">
 
-<div class="p1">
-    CART TOTALS
-</div>
+    <div class="p1">
+        CART TOTALS
+    </div>
 
-<br>
+    <br>
 
-<div class="p2">
-    Total
-    <span>1000PKR</span>
-</div>
+    <div class="p2">
+        Total
+        <span>1000PKR</span>
+    </div>
 
-<br>
-<hr class="hr1">
-<br>
+    <br>
+    <hr class="hr1">
+    <br>
 
-<button class="butn">Proceed to checkout</button>
-<br>
+    <button class="butn">Proceed to checkout</button>
+    <br>
 </div>
