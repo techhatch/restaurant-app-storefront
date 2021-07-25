@@ -1,5 +1,27 @@
+import shopingcart from './cart.js';
+import { showSlides, openMenu } from './Foodmenu.js'
 
-(function () {
+
+export function loadContainer(pagename) {
+    console.log(pagename);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', pagename);
+    xhr.onload = function () {
+        document.getElementById("container").innerHTML = this.response;
+        if (pagename === "cart.html") {
+            shopingcart()
+        }
+        if (pagename === "menu.html") {
+            showSlides(0);
+            openMenu();
+        }
+
+    };
+    xhr.send();
+}
+window.loadContainer = loadContainer;
+export function loadmenu() {
     // define all UI variable
     const navToggler = document.querySelector('.nav-toggler');
     const navMenu = document.querySelector('.site-navbar ul');
@@ -40,16 +62,8 @@
         }
     }
 
-    function loadContainer(pagename) {
-        console.log(pagename);
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', pagename);
-        xhr.onload = function () {
-            document.getElementById("container").innerHTML = this.response;
-        };
-        xhr.send();
-    }
 
 
-})();
+
+};
 

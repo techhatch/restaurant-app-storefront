@@ -5,15 +5,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Tasty Bites</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <!-- CSS files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/src/css/main.css" />
     <link rel="stylesheet" href="/src/css/about.css" />
     <link rel="stylesheet" href="/src/css/home.css" />
+    <link rel="stylesheet" href="/src/css/menu.css" />
     <link rel="stylesheet" href="/src/css/signIn.css" />
     <link rel="stylesheet" href="/src/css/Reservation.css" />
+    <link rel="stylesheet" href="/src/css/cart.css" />
 
-    <title>Tasty Bites</title>
+
 </head>
+
 
 <body>
     <header class="header-area">
@@ -32,9 +50,12 @@
                         <li>
                             <a href="javascript:void(0)" data-page="about.html">About</a>
                         </li>
-                        <li><a href="javascript:void(0)">Menu</a></li>
-                        <li><a href="javascript:void(0)">service</a></li>
-                        <li><a href="javascript:void(0)" data-page="Reservation.html">Reservation</a></li>
+                        <li>
+                            <a href="javascript:void(0)" data-page="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-page="Reservation.html">Reservation</a>
+                        </li>
                         <li>
                             <a href="javascript:void(0)" style="margin-left: 200px" data-page="SignIn.html">Sign
                                 in/Register</a>
@@ -52,7 +73,9 @@
                         </div> -->
 
                         <li>
-                            <a><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
+                            <a><i class="fa fa-shopping-cart" href="javascript:void(0)" data-page="cart.html"
+                                    style="cursor: pointer;"></i>
+                            </a>
                         </li>
                     </ul>
 
@@ -76,15 +99,11 @@
                     veritatis laboriosam impedit veniam optio,<br />
                     provident quam atque nisi ipsam.
                 </p>
-                <button class="custom-btn btn-16">Order Now</button>
+                <button class="custom-btn btn-16"><a href="menu.html">Order Now</a></button>
             </div>
         </div>
-
     </section>
     <script src="/src/js/signIn.js"></script>
-    <script src="/src/js/menu.js"></script>
-    <script src="/src/js/reserve.js"></script>
-    <script src="/src/js/reservation.js"></script>
 
 
 
@@ -97,6 +116,8 @@
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="/src/js/main.js" type="module"></script>
+
 </body>
 
 </html>
