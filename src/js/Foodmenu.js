@@ -34,7 +34,16 @@ export function showSlides(n) {
     }
 
 }
-
+export function attachMenus() {
+    let anchors = document.querySelectorAll('.nav-menu-bar > a');
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', (ev) => {
+            ev.preventDefault();
+            const id = ev.target.dataset.id;
+            openMenu(id);
+        });
+    })
+}
 // Tabbed Menu
 export function openMenu(menuName) {
     var i, x;
@@ -44,6 +53,5 @@ export function openMenu(menuName) {
     } {
         document.getElementById(menuName).style.display = "block";
     }
-    document.getElementById("myLink").click();
 }
 

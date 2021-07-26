@@ -1,5 +1,5 @@
 import shopingcart from './cart.js';
-import { showSlides, openMenu } from './Foodmenu.js'
+import { showSlides, openMenu, attachMenus } from './Foodmenu.js'
 
 
 export function loadContainer(pagename) {
@@ -14,7 +14,8 @@ export function loadContainer(pagename) {
         }
         if (pagename === "menu.html") {
             showSlides(0);
-            openMenu();
+            attachMenus();
+            openMenu('Breakfast');
         }
 
     };

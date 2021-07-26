@@ -1,10 +1,7 @@
 .main {
-  position: relative;
-  height: 100vh;
   width: 100%;
 }
 .main header {
-  position: relative;
   height: 25vh;
   width: 100%;
   display: flex;
@@ -37,17 +34,18 @@
 .main .itemsBox {
   position: relative;
   height: calc(100% - 15vh);
-  width: 50%;
-  margin: 0 auto;
+  width: 57%;
+  margin: 4px auto;
   overflow: hidden;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 6%;
   padding: 50px 25px;
 }
-.main .itemsBox .item {
+.item {
   position: relative;
   width: 100%;
+  height: 390px;
   overflow: hidden;
   padding: 0px 0px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
@@ -59,37 +57,38 @@
   object-fit: cover;
 }
 
-.main .itemsBox .item h1 {
+.item h1 {
   position: relative;
   width: 100%;
-  text-align: center;
+  margin-top: 1%;
+  margin-left: 1em;
+  text-align: left;
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: 600;
+  color: #202020;
   padding: 10px 0;
 }
-.main .itemsBox .item p {
-  position: relative;
+.item p {
   width: 100%;
-  text-align: right;
-  font-size: 1.2rem;
-  font-weight: lighter;
-  padding: 2px 0;
-  color: blue;
-}
-.main .itemsBox .item a {
-  position: relative;
   text-align: left;
+  margin-left: 1.2em;
+  margin-top: -7px;
+  font-size: 1.2rem;
+  margin-bottom: 33px;
+  font-weight: lighter;
+  color: rgb(255, 0, 0);
+}
+.item a {
+  text-align: center;
+  margin-left: 18%;
   font-size: 1.2rem;
   font-weight: lighter;
-  padding: 6% 1px;
+  padding: 5% 53px;
   background: #4aab00;
   text-decoration: none;
   color: #fff;
-
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-}
-.main .itemsBox .item a:hover {
-  background: #aff976;
+  cursor: pointer;
 }
 
 /*cart box*/

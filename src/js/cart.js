@@ -59,11 +59,14 @@ export default function () {
     let items = [];
     for (let i = 0; i < attToCartBtn.length; i++) {
         attToCartBtn[i].addEventListener("click", function (e) {
+            const el = e.target;
+            const container = el.parentElement;
+
             if (typeof (Storage) !== 'undefined') {
                 let item = {
                     id: i + 1,
-                    name: e.target.parentElement.children[0].textContent,
-                    price: e.target.parentElement.children[1].children[0].textContent,
+                    name: container.children[0].textContent,
+                    price: container.children[1].children[1].textContent,
                     no: 1
                 };
                 if (JSON.parse(localStorage.getItem('items')) === null) {
